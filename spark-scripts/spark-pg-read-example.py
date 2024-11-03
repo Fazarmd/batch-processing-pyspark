@@ -36,8 +36,8 @@ jdbc_properties = {
 
 retail_df = spark.read.jdbc(
     jdbc_url,
-    'public.sample_retail',
+    'public.retail',
     properties=jdbc_properties
 )
 
-retail_df.show(5)
+retail_df.show(10)
